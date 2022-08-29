@@ -1,0 +1,11 @@
+{
+  "name": "mv3-examples",
+  "version": "0.1.0",
+  "description": "Example code building Chrome extension manifest v3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Wang <me@scottoas.is>",
+  "license": "MIT"
+}

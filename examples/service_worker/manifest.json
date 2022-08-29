@@ -1,0 +1,9 @@
+{
+  "name": "MV3 Playground",
+  "description": "Test out Chrome extension manifest v3",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "service_worker.js"
+  }
+}
