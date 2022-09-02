@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Scott Wang <me@scottoas.is>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "rescript": "^9.1.4"
+  }
 }
