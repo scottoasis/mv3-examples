@@ -1,0 +1,13 @@
+{
+  "name": "Alarm wakes up service worker",
+  "description": "Example code showcasing chrome.alarm API to wake up Service Worker after user re-open their laptop",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": [
+    "alarms",
+    "notifications"
+  ]
+}
