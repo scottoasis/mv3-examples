@@ -1,0 +1,16 @@
+{
+  "name": "Connect port keeps service worker loaded",
+  "description": "Example code showcasing Service Worker won't get unload if there's an open connect() port",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
