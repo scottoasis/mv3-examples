@@ -9,27 +9,27 @@ with non-chrome URL), it wakes up the service worker.
 ````
     Service worker       the Browser         Content script
 
-           |                   '
-        unloaded               '
-           |                   '               page open
-           |                   '                   |
-           |                   '                 init
-           |                   '                   |
-           |<------- "content_script.start" -------* t_0
-           |                   '                   |
-        loaded                 '                   |
-           |                   '                   |
-           |                   '                   |
-           |                   '                   |
-         idle                  '                   |
-           |                   '                   |
-           |                   '                   |
+           '                   |
+        unloaded               |
+           '                   |               page open
+           '                   |                   |
+           '                   |                 init
+           '                   |                   |
+           '<------- "content_script.start" -------* t_0
+           |                   |                   |
+        loaded                 |                   |
+           |                   |                   |
+           |                   |                   |
+           |                   |                   |
+         idle                  |                   |
+           |                   |                   |
+           |                   |                   |
            |<--- onSubsepnd ---*                   |
-           |                   '                   |
+           |                   |                   |
        t_1 *------ "service_worker.onSuspend" ---->|
-           |                   '                   |
-           |                   '                   |
-       unloaded                '                   |
-           |                   '                   |
+           |                   |                   |
+           '                   |                   |
+       unloaded                |                   |
+           '                   |                   |
 
 ````
