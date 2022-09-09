@@ -13,6 +13,11 @@ chrome.alarms.getAll((alarms) => {
   }
 });
 
+chrome.idle.onStateChanged.addListener(
+  idleState =>
+    console.log("idle state changed to", idleState)
+);
+
 chrome.alarms.onAlarm.addListener(
   alarm => {
     console.log("alarm went off", alarm);
